@@ -10,3 +10,5 @@
 
 # @googleapis/python-samples-reviewers is the default owner for samples changes
 /samples/   @googleapis/python-samples-reviewers
+
+.github/auto-approve.yml @googleapis/github-automation @googleapis/yoshi-python
