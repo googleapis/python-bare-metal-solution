@@ -16,7 +16,7 @@
 from collections import OrderedDict
 import os
 import re
-from typing import Dict, Optional, Sequence, Tuple, Type, Union
+from typing import Dict, Mapping, Optional, Sequence, Tuple, Type, Union
 import pkg_resources
 
 from google.api_core import client_options as client_options_lib
@@ -566,7 +566,7 @@ class BareMetalSolutionClient(metaclass=BareMetalSolutionClientMeta):
 
         .. code-block:: python
 
-            from google.cloud import bare_metal_solution_v2
+                    from google.cloud import bare_metal_solution_v2
 
             def sample_list_instances():
                 # Create a client
@@ -674,7 +674,7 @@ class BareMetalSolutionClient(metaclass=BareMetalSolutionClientMeta):
 
         .. code-block:: python
 
-            from google.cloud import bare_metal_solution_v2
+                    from google.cloud import bare_metal_solution_v2
 
             def sample_get_instance():
                 # Create a client
@@ -768,7 +768,7 @@ class BareMetalSolutionClient(metaclass=BareMetalSolutionClientMeta):
 
         .. code-block:: python
 
-            from google.cloud import bare_metal_solution_v2
+                    from google.cloud import bare_metal_solution_v2
 
             def sample_reset_instance():
                 # Create a client
@@ -876,7 +876,7 @@ class BareMetalSolutionClient(metaclass=BareMetalSolutionClientMeta):
 
         .. code-block:: python
 
-            from google.cloud import bare_metal_solution_v2
+                    from google.cloud import bare_metal_solution_v2
 
             def sample_list_volumes():
                 # Create a client
@@ -984,7 +984,7 @@ class BareMetalSolutionClient(metaclass=BareMetalSolutionClientMeta):
 
         .. code-block:: python
 
-            from google.cloud import bare_metal_solution_v2
+                    from google.cloud import bare_metal_solution_v2
 
             def sample_get_volume():
                 # Create a client
@@ -1076,7 +1076,7 @@ class BareMetalSolutionClient(metaclass=BareMetalSolutionClientMeta):
 
         .. code-block:: python
 
-            from google.cloud import bare_metal_solution_v2
+                    from google.cloud import bare_metal_solution_v2
 
             def sample_update_volume():
                 # Create a client
@@ -1199,7 +1199,7 @@ class BareMetalSolutionClient(metaclass=BareMetalSolutionClientMeta):
 
         .. code-block:: python
 
-            from google.cloud import bare_metal_solution_v2
+                    from google.cloud import bare_metal_solution_v2
 
             def sample_list_networks():
                 # Create a client
@@ -1307,7 +1307,7 @@ class BareMetalSolutionClient(metaclass=BareMetalSolutionClientMeta):
 
         .. code-block:: python
 
-            from google.cloud import bare_metal_solution_v2
+                    from google.cloud import bare_metal_solution_v2
 
             def sample_get_network():
                 # Create a client
@@ -1402,7 +1402,7 @@ class BareMetalSolutionClient(metaclass=BareMetalSolutionClientMeta):
 
         .. code-block:: python
 
-            from google.cloud import bare_metal_solution_v2
+                    from google.cloud import bare_metal_solution_v2
 
             def sample_list_snapshot_schedule_policies():
                 # Create a client
@@ -1515,7 +1515,7 @@ class BareMetalSolutionClient(metaclass=BareMetalSolutionClientMeta):
 
         .. code-block:: python
 
-            from google.cloud import bare_metal_solution_v2
+                    from google.cloud import bare_metal_solution_v2
 
             def sample_get_snapshot_schedule_policy():
                 # Create a client
@@ -1614,7 +1614,7 @@ class BareMetalSolutionClient(metaclass=BareMetalSolutionClientMeta):
 
         .. code-block:: python
 
-            from google.cloud import bare_metal_solution_v2
+                    from google.cloud import bare_metal_solution_v2
 
             def sample_create_snapshot_schedule_policy():
                 # Create a client
@@ -1736,7 +1736,7 @@ class BareMetalSolutionClient(metaclass=BareMetalSolutionClientMeta):
 
         .. code-block:: python
 
-            from google.cloud import bare_metal_solution_v2
+                    from google.cloud import bare_metal_solution_v2
 
             def sample_update_snapshot_schedule_policy():
                 # Create a client
@@ -1853,7 +1853,7 @@ class BareMetalSolutionClient(metaclass=BareMetalSolutionClientMeta):
 
         .. code-block:: python
 
-            from google.cloud import bare_metal_solution_v2
+                    from google.cloud import bare_metal_solution_v2
 
             def sample_delete_snapshot_schedule_policy():
                 # Create a client
@@ -1943,7 +1943,7 @@ class BareMetalSolutionClient(metaclass=BareMetalSolutionClientMeta):
 
         .. code-block:: python
 
-            from google.cloud import bare_metal_solution_v2
+                    from google.cloud import bare_metal_solution_v2
 
             def sample_create_volume_snapshot():
                 # Create a client
@@ -2048,7 +2048,7 @@ class BareMetalSolutionClient(metaclass=BareMetalSolutionClientMeta):
 
         .. code-block:: python
 
-            from google.cloud import bare_metal_solution_v2
+                    from google.cloud import bare_metal_solution_v2
 
             def sample_restore_volume_snapshot():
                 # Create a client
@@ -2158,7 +2158,7 @@ class BareMetalSolutionClient(metaclass=BareMetalSolutionClientMeta):
 
         .. code-block:: python
 
-            from google.cloud import bare_metal_solution_v2
+                    from google.cloud import bare_metal_solution_v2
 
             def sample_delete_volume_snapshot():
                 # Create a client
@@ -2241,7 +2241,7 @@ class BareMetalSolutionClient(metaclass=BareMetalSolutionClientMeta):
 
         .. code-block:: python
 
-            from google.cloud import bare_metal_solution_v2
+                    from google.cloud import bare_metal_solution_v2
 
             def sample_get_volume_snapshot():
                 # Create a client
@@ -2336,7 +2336,7 @@ class BareMetalSolutionClient(metaclass=BareMetalSolutionClientMeta):
 
         .. code-block:: python
 
-            from google.cloud import bare_metal_solution_v2
+                    from google.cloud import bare_metal_solution_v2
 
             def sample_list_volume_snapshots():
                 # Create a client
@@ -2446,7 +2446,7 @@ class BareMetalSolutionClient(metaclass=BareMetalSolutionClientMeta):
 
         .. code-block:: python
 
-            from google.cloud import bare_metal_solution_v2
+                    from google.cloud import bare_metal_solution_v2
 
             def sample_get_lun():
                 # Create a client
@@ -2539,7 +2539,7 @@ class BareMetalSolutionClient(metaclass=BareMetalSolutionClientMeta):
 
         .. code-block:: python
 
-            from google.cloud import bare_metal_solution_v2
+                    from google.cloud import bare_metal_solution_v2
 
             def sample_list_luns():
                 # Create a client
