@@ -19,19 +19,19 @@ from google.protobuf import field_mask_pb2  # type: ignore
 
 
 __protobuf__ = proto.module(
-    package='google.cloud.baremetalsolution.v2',
+    package="google.cloud.baremetalsolution.v2",
     manifest={
-        'Network',
-        'NetworkAddressReservation',
-        'VRF',
-        'LogicalInterface',
-        'GetNetworkRequest',
-        'ListNetworksRequest',
-        'ListNetworksResponse',
-        'UpdateNetworkRequest',
-        'NetworkUsage',
-        'ListNetworkUsageRequest',
-        'ListNetworkUsageResponse',
+        "Network",
+        "NetworkAddressReservation",
+        "VRF",
+        "LogicalInterface",
+        "GetNetworkRequest",
+        "ListNetworksRequest",
+        "ListNetworksResponse",
+        "UpdateNetworkRequest",
+        "NetworkUsage",
+        "ListNetworkUsageRequest",
+        "ListNetworkUsageResponse",
     },
 )
 
@@ -73,6 +73,7 @@ class Network(proto.Message):
             IP address already allocated to a physical
             server.
     """
+
     class Type(proto.Enum):
         r"""Network type."""
         TYPE_UNSPECIFIED = 0
@@ -122,7 +123,7 @@ class Network(proto.Message):
     vrf = proto.Field(
         proto.MESSAGE,
         number=9,
-        message='VRF',
+        message="VRF",
     )
     labels = proto.MapField(
         proto.STRING,
@@ -136,7 +137,7 @@ class Network(proto.Message):
     reservations = proto.RepeatedField(
         proto.MESSAGE,
         number=13,
-        message='NetworkAddressReservation',
+        message="NetworkAddressReservation",
     )
 
 
@@ -185,6 +186,7 @@ class VRF(proto.Message):
         vlan_attachments (Sequence[google.cloud.bare_metal_solution_v2.types.VRF.VlanAttachment]):
             The list of VLAN attachments for the VRF.
     """
+
     class State(proto.Enum):
         r"""The possible states for this VRF."""
         STATE_UNSPECIFIED = 0
@@ -305,7 +307,7 @@ class LogicalInterface(proto.Message):
         network_type = proto.Field(
             proto.ENUM,
             number=4,
-            enum='Network.Type',
+            enum="Network.Type",
         )
         id = proto.Field(
             proto.STRING,
@@ -397,7 +399,7 @@ class ListNetworksResponse(proto.Message):
     networks = proto.RepeatedField(
         proto.MESSAGE,
         number=1,
-        message='Network',
+        message="Network",
     )
     next_page_token = proto.Field(
         proto.STRING,
@@ -427,7 +429,7 @@ class UpdateNetworkRequest(proto.Message):
     network = proto.Field(
         proto.MESSAGE,
         number=1,
-        message='Network',
+        message="Network",
     )
     update_mask = proto.Field(
         proto.MESSAGE,
@@ -449,7 +451,7 @@ class NetworkUsage(proto.Message):
     network = proto.Field(
         proto.MESSAGE,
         number=1,
-        message='Network',
+        message="Network",
     )
     used_ips = proto.RepeatedField(
         proto.STRING,
@@ -483,7 +485,7 @@ class ListNetworkUsageResponse(proto.Message):
     networks = proto.RepeatedField(
         proto.MESSAGE,
         number=1,
-        message='NetworkUsage',
+        message="NetworkUsage",
     )
 
 

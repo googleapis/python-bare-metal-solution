@@ -17,12 +17,12 @@ import proto  # type: ignore
 
 
 __protobuf__ = proto.module(
-    package='google.cloud.baremetalsolution.v2',
+    package="google.cloud.baremetalsolution.v2",
     manifest={
-        'Lun',
-        'GetLunRequest',
-        'ListLunsRequest',
-        'ListLunsResponse',
+        "Lun",
+        "GetLunRequest",
+        "ListLunsRequest",
+        "ListLunsResponse",
     },
 )
 
@@ -56,6 +56,7 @@ class Lun(proto.Message):
         wwid (str):
             The WWID for this LUN.
     """
+
     class State(proto.Enum):
         r"""The possible states for the LUN."""
         STATE_UNSPECIFIED = 0
@@ -185,7 +186,7 @@ class ListLunsResponse(proto.Message):
     luns = proto.RepeatedField(
         proto.MESSAGE,
         number=1,
-        message='Lun',
+        message="Lun",
     )
     next_page_token = proto.Field(
         proto.STRING,

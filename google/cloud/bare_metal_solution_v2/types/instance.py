@@ -22,20 +22,20 @@ from google.protobuf import timestamp_pb2  # type: ignore
 
 
 __protobuf__ = proto.module(
-    package='google.cloud.baremetalsolution.v2',
+    package="google.cloud.baremetalsolution.v2",
     manifest={
-        'Instance',
-        'GetInstanceRequest',
-        'ListInstancesRequest',
-        'ListInstancesResponse',
-        'UpdateInstanceRequest',
-        'ResetInstanceRequest',
-        'StartInstanceRequest',
-        'StopInstanceRequest',
-        'DetachLunRequest',
-        'ServerNetworkTemplate',
-        'StartInstanceResponse',
-        'StopInstanceResponse',
+        "Instance",
+        "GetInstanceRequest",
+        "ListInstancesRequest",
+        "ListInstancesResponse",
+        "UpdateInstanceRequest",
+        "ResetInstanceRequest",
+        "StartInstanceRequest",
+        "StopInstanceRequest",
+        "DetachLunRequest",
+        "ServerNetworkTemplate",
+        "StartInstanceResponse",
+        "StopInstanceResponse",
     },
 )
 
@@ -100,6 +100,7 @@ class Instance(proto.Message):
             backward compatibility. For the others, only
             Instance.logical_interfaces will be filled.
     """
+
     class State(proto.Enum):
         r"""The possible states for this server."""
         STATE_UNSPECIFIED = 0
@@ -246,7 +247,7 @@ class ListInstancesResponse(proto.Message):
     instances = proto.RepeatedField(
         proto.MESSAGE,
         number=1,
-        message='Instance',
+        message="Instance",
     )
     next_page_token = proto.Field(
         proto.STRING,
@@ -276,7 +277,7 @@ class UpdateInstanceRequest(proto.Message):
     instance = proto.Field(
         proto.MESSAGE,
         number=1,
-        message='Instance',
+        message="Instance",
     )
     update_mask = proto.Field(
         proto.MESSAGE,
@@ -381,6 +382,7 @@ class ServerNetworkTemplate(proto.Message):
                 If true, interface must have network
                 connected.
         """
+
         class InterfaceType(proto.Enum):
             r"""Interface type."""
             INTERFACE_TYPE_UNSPECIFIED = 0
@@ -394,7 +396,7 @@ class ServerNetworkTemplate(proto.Message):
         type_ = proto.Field(
             proto.ENUM,
             number=2,
-            enum='ServerNetworkTemplate.LogicalInterface.InterfaceType',
+            enum="ServerNetworkTemplate.LogicalInterface.InterfaceType",
         )
         required = proto.Field(
             proto.BOOL,
@@ -417,13 +419,11 @@ class ServerNetworkTemplate(proto.Message):
 
 
 class StartInstanceResponse(proto.Message):
-    r"""Response message from starting a server.
-    """
+    r"""Response message from starting a server."""
 
 
 class StopInstanceResponse(proto.Message):
-    r"""Response message from stopping a server.
-    """
+    r"""Response message from stopping a server."""
 
 
 __all__ = tuple(sorted(__protobuf__.manifest))

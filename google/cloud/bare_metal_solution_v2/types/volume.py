@@ -19,14 +19,14 @@ from google.protobuf import field_mask_pb2  # type: ignore
 
 
 __protobuf__ = proto.module(
-    package='google.cloud.baremetalsolution.v2',
+    package="google.cloud.baremetalsolution.v2",
     manifest={
-        'Volume',
-        'GetVolumeRequest',
-        'ListVolumesRequest',
-        'ListVolumesResponse',
-        'UpdateVolumeRequest',
-        'ResizeVolumeRequest',
+        "Volume",
+        "GetVolumeRequest",
+        "ListVolumesRequest",
+        "ListVolumesResponse",
+        "UpdateVolumeRequest",
+        "ResizeVolumeRequest",
     },
 )
 
@@ -79,6 +79,7 @@ class Volume(proto.Message):
         pod (str):
             Immutable. Pod name.
     """
+
     class StorageType(proto.Enum):
         r"""The storage type for a volume."""
         STORAGE_TYPE_UNSPECIFIED = 0
@@ -276,7 +277,7 @@ class ListVolumesResponse(proto.Message):
     volumes = proto.RepeatedField(
         proto.MESSAGE,
         number=1,
-        message='Volume',
+        message="Volume",
     )
     next_page_token = proto.Field(
         proto.STRING,
@@ -309,7 +310,7 @@ class UpdateVolumeRequest(proto.Message):
     volume = proto.Field(
         proto.MESSAGE,
         number=1,
-        message='Volume',
+        message="Volume",
     )
     update_mask = proto.Field(
         proto.MESSAGE,

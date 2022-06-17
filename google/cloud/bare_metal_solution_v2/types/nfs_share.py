@@ -19,13 +19,13 @@ from google.protobuf import field_mask_pb2  # type: ignore
 
 
 __protobuf__ = proto.module(
-    package='google.cloud.baremetalsolution.v2',
+    package="google.cloud.baremetalsolution.v2",
     manifest={
-        'NfsShare',
-        'GetNfsShareRequest',
-        'ListNfsSharesRequest',
-        'ListNfsSharesResponse',
-        'UpdateNfsShareRequest',
+        "NfsShare",
+        "GetNfsShareRequest",
+        "ListNfsSharesRequest",
+        "ListNfsSharesResponse",
+        "UpdateNfsShareRequest",
     },
 )
 
@@ -48,6 +48,7 @@ class NfsShare(proto.Message):
         labels (Mapping[str, str]):
             Labels as key value pairs.
     """
+
     class State(proto.Enum):
         r"""The possible states for this NFS share."""
         STATE_UNSPECIFIED = 0
@@ -99,7 +100,7 @@ class NfsShare(proto.Message):
         mount_permissions = proto.Field(
             proto.ENUM,
             number=4,
-            enum='NfsShare.MountPermissions',
+            enum="NfsShare.MountPermissions",
         )
         allow_dev = proto.Field(
             proto.BOOL,
@@ -213,7 +214,7 @@ class ListNfsSharesResponse(proto.Message):
     nfs_shares = proto.RepeatedField(
         proto.MESSAGE,
         number=1,
-        message='NfsShare',
+        message="NfsShare",
     )
     next_page_token = proto.Field(
         proto.STRING,
@@ -243,7 +244,7 @@ class UpdateNfsShareRequest(proto.Message):
     nfs_share = proto.Field(
         proto.MESSAGE,
         number=1,
-        message='NfsShare',
+        message="NfsShare",
     )
     update_mask = proto.Field(
         proto.MESSAGE,
