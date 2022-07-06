@@ -6719,7 +6719,6 @@ def test_bare_metal_solution_transport_auth_adc(transport_class):
     [
         transports.BareMetalSolutionGrpcTransport,
         transports.BareMetalSolutionGrpcAsyncIOTransport,
-        transports.BareMetalSolutionRestTransport,
     ],
 )
 def test_bare_metal_solution_transport_auth_gdch_credentials(transport_class):
