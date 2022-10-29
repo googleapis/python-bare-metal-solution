@@ -13,6 +13,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+from google.cloud.bare_metal_solution import gapic_version as package_version
+
+__version__ = package_version.__version__
+
 
 from .services.bare_metal_solution import BareMetalSolutionClient
 from .services.bare_metal_solution import BareMetalSolutionAsyncClient
