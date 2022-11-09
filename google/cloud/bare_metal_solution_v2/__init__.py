@@ -18,49 +18,54 @@ from google.cloud.bare_metal_solution import gapic_version as package_version
 __version__ = package_version.__version__
 
 
-from .services.bare_metal_solution import BareMetalSolutionClient
-from .services.bare_metal_solution import BareMetalSolutionAsyncClient
-
-from .types.baremetalsolution import OperationMetadata
-from .types.baremetalsolution import ResetInstanceResponse
-from .types.instance import DetachLunRequest
-from .types.instance import GetInstanceRequest
-from .types.instance import Instance
-from .types.instance import ListInstancesRequest
-from .types.instance import ListInstancesResponse
-from .types.instance import ResetInstanceRequest
-from .types.instance import ServerNetworkTemplate
-from .types.instance import StartInstanceRequest
-from .types.instance import StartInstanceResponse
-from .types.instance import StopInstanceRequest
-from .types.instance import StopInstanceResponse
-from .types.instance import UpdateInstanceRequest
-from .types.lun import GetLunRequest
-from .types.lun import ListLunsRequest
-from .types.lun import ListLunsResponse
-from .types.lun import Lun
-from .types.network import GetNetworkRequest
-from .types.network import ListNetworksRequest
-from .types.network import ListNetworksResponse
-from .types.network import ListNetworkUsageRequest
-from .types.network import ListNetworkUsageResponse
-from .types.network import LogicalInterface
-from .types.network import Network
-from .types.network import NetworkAddressReservation
-from .types.network import NetworkUsage
-from .types.network import UpdateNetworkRequest
-from .types.network import VRF
-from .types.nfs_share import GetNfsShareRequest
-from .types.nfs_share import ListNfsSharesRequest
-from .types.nfs_share import ListNfsSharesResponse
-from .types.nfs_share import NfsShare
-from .types.nfs_share import UpdateNfsShareRequest
-from .types.volume import GetVolumeRequest
-from .types.volume import ListVolumesRequest
-from .types.volume import ListVolumesResponse
-from .types.volume import ResizeVolumeRequest
-from .types.volume import UpdateVolumeRequest
-from .types.volume import Volume
+from .services.bare_metal_solution import (
+    BareMetalSolutionAsyncClient,
+    BareMetalSolutionClient,
+)
+from .types.baremetalsolution import OperationMetadata, ResetInstanceResponse
+from .types.instance import (
+    DetachLunRequest,
+    GetInstanceRequest,
+    Instance,
+    ListInstancesRequest,
+    ListInstancesResponse,
+    ResetInstanceRequest,
+    ServerNetworkTemplate,
+    StartInstanceRequest,
+    StartInstanceResponse,
+    StopInstanceRequest,
+    StopInstanceResponse,
+    UpdateInstanceRequest,
+)
+from .types.lun import GetLunRequest, ListLunsRequest, ListLunsResponse, Lun
+from .types.network import (
+    VRF,
+    GetNetworkRequest,
+    ListNetworksRequest,
+    ListNetworksResponse,
+    ListNetworkUsageRequest,
+    ListNetworkUsageResponse,
+    LogicalInterface,
+    Network,
+    NetworkAddressReservation,
+    NetworkUsage,
+    UpdateNetworkRequest,
+)
+from .types.nfs_share import (
+    GetNfsShareRequest,
+    ListNfsSharesRequest,
+    ListNfsSharesResponse,
+    NfsShare,
+    UpdateNfsShareRequest,
+)
+from .types.volume import (
+    GetVolumeRequest,
+    ListVolumesRequest,
+    ListVolumesResponse,
+    ResizeVolumeRequest,
+    UpdateVolumeRequest,
+    Volume,
+)
 
 __all__ = (
     "BareMetalSolutionAsyncClient",
